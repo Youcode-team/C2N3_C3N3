@@ -20,7 +20,7 @@ Ce projet entre dans le cadre de la formation `YOUCODE YOUSSOUFIA PROMOTION 2019
 
 [3] Notez bien, les `Milestones` assignés aux `issues` représentant le dernier délai des livrables.  
 
-[4] 
+[4] ...Continue 
 
 [5] 
 
