@@ -14,29 +14,58 @@ Ce projet entre dans le cadre de la formation `YOUCODE YOUSSOUFIA PROMOTION 2019
 
 ## Déroulement : 
 
+### Semaine I & II : 15 jours
+
 [1] `FORK` ou `Clone` le repository suivant, ou on va travailler sous `GITHUB ORGANISATION`.
 
-[2] Analysez l'ensemble des `issues` qui seront assignés au fur et à mesure et qui seront organisés sur le tableau `KANBAN`.
+[2] Analysez l'ensemble des `issues` qui seront assignés au fur et à mesure et qui seront organisés sur le tableau `KANBAN`(des séances
+    live-coding seront programmé sous forme d'issue avec un Timeline à respecter).
 
-[3] Notez bien, les `Milestones` assignés aux `issues` représentant le dernier délai des livrables.  
+[3] Notez bien les `Milestones` assignés aux `issues` représentant le dernier délai des livrables.  
 
-[4] ...Continue 
+[4] Jetez un coup d'oeil sur le dossier `/Design`, contenant un fichier `AdobeXD` du design et ces `assets`. 
 
-[5] continue test
+[5] Attaquez l'intégration du site en utilisant les technologies que vous avez vu précédemment `(HTML/CSS/SASS)`.
 
+### Semaine III : 10 jours 
 
+[6] Analysez l'algorithme sur le dossier `/Algorithme` qui sera implémenté avec du  `JAVASCRIPT` (Dynamisez votre site).
 
-## Best Practices : 
+### Semaine IV : 5 jours 
 
-## Conditions : 
-
-
-
-
-
+[7] Rédigez un rapport d'activités du projet et sa documentation technique (Optionnel). 
 
 
+## Modalités du travail :
 
- **Restez Toujours Branché !**
+__Travail individuel 
+
+__Des livrables chaque fin de la semaine 
+
+__Timeline d'un mois relatif 
+
+__Des séances live coding fréquentes
+
+__Des sujets de veilles chaque semaine
+
+
+## Criteres d'évaluations  :
+
+__Livrables dans les délais.
+
+__L'intégration est conforme à la maquette proposée.
+
+__Respect de la responsivité.
+
+__Implémentation CSS réutilisable. 
+
+__Algorithme dans les normes comme expliqué dans la brochure du dossier `/Algotithme`.
+
+__Des commits et des mises à jour journaliéres sur `GitHub`.
+
+__Des entretiens au pifs qui seront programmés chaque fin de tache.
+
+
+**Restez Toujours Branché !**
 
 **Have fun building!** 🚀
