@@ -35,6 +35,18 @@ Ce projet entre dans le cadre de la formation `YOUCODE YOUSSOUFIA PROMOTION 2019
 
 [7] Rédigez un rapport d'activités du projet et sa documentation technique (Optionnel). 
 
+## Automatiser : 
+
+__`git clone /lien Repository/` ou `Fork`.
+
+__`npm install /packages/`.
+
+__`Watching` `concatenation` `Préfixage`  avec `NPM Scripts`. 
+
+__`Compression` du `CSS` et `Javascript` avec `NPM Scripts`.
+
+__`deploy` & `hosting` avec `GitHub pages` `netlify`. 
+
 
 ## Modalités du travail :
 
