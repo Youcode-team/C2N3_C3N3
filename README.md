@@ -60,6 +60,8 @@ __Des séances live coding fréquentes
 
 __Des sujets de veilles chaque semaine
 
+__Les fichiers starter sont dans le dossier `/Starter-file`
+
 
 ## Criteres d'évaluations  :
 
