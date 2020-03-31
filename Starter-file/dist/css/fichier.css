@@ -18,6 +18,12 @@ body header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (min-width: 1024px) {
+      body header nav {
+        width: 40%; } }
+    @media only screen and (min-width: 1200px) {
+      body header nav {
+        font-size: 150%; } }
     body header nav ul {
       width: 60%;
       display: flex;
@@ -48,6 +54,9 @@ body .reminder {
   padding: .5rem;
   font-size: .8rem;
   padding: .3rem 2rem 0; }
+  @media only screen and (min-width: 1200px) {
+    body .reminder {
+      font-size: 110%; } }
   body .reminder h4 {
     color: #1078AD; }
   body .reminder p {
@@ -62,6 +71,9 @@ body .section1 {
     body .section1 {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
+  @media only screen and (min-width: 1200px) {
+    body .section1 {
+      font-size: 170%; } }
   body .section1___illustration img {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -82,6 +94,9 @@ body .section1 {
     font-weight: bold;
     color: #7F7F7F;
     padding: 1rem; }
+    @media only screen and (min-width: 1200px) {
+      body .section1__part2 p {
+        font-size: 103%; } }
   body .section1__part2 button {
     font-size: 1.3rem;
     font-weight: bold;
@@ -90,6 +105,9 @@ body .section1 {
     border-radius: 5px;
     color: #FFFFFF;
     width: 80%; }
+    @media only screen and (min-width: 1200px) {
+      body .section1__part2 button {
+        font-size: 120%; } }
 
 body .section2 {
   padding: .5rem;
@@ -100,45 +118,76 @@ body .section2 {
   body .section2 h2 {
     color: #1078AD;
     padding: 1rem 3.5rem; }
+    @media only screen and (min-width: 1200px) {
+      body .section2 h2 {
+        font-size: 200%; } }
   body .section2__symtomes {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap; }
+    @media only screen and (min-width: 1200px) {
+      body .section2__symtomes {
+        padding: 2rem 4rem; } }
   body .section2__fièvre {
     width: 50%;
     text-align: center; }
     body .section2__fièvre img {
       width: 15vw;
       height: 10vh; }
+      @media only screen and (min-width: 1200px) {
+        body .section2__fièvre img {
+          height: 20vh; } }
   body .section2__nausées {
     width: 50%;
     text-align: center; }
     body .section2__nausées img {
       width: 15vw;
-      height: 10vh; }
+      height: 15vh; }
+      @media only screen and (min-width: 1200px) {
+        body .section2__nausées img {
+          width: 12vw;
+          height: 20vh; } }
   body .section2__gêne {
     width: 50%;
     text-align: center; }
     body .section2__gêne img {
       width: 20vw;
-      height: 10vh; }
+      height: 15vh; }
+      @media only screen and (min-width: 1200px) {
+        body .section2__gêne img {
+          width: 12vw;
+          height: 20vh; } }
   body .section2__toux {
     width: 50%;
     text-align: center; }
     body .section2__toux img {
       width: 20vw;
-      height: 10vh; }
+      height: 15vh; }
+      @media only screen and (min-width: 1200px) {
+        body .section2__toux img {
+          width: 12vw;
+          height: 20vh; } }
 
 body .section3 {
   text-align: center;
   background-color: #1078AD; }
   body .section3 h4 {
     color: #D0E5F0; }
+    @media only screen and (min-width: 1024px) {
+      body .section3 h4 {
+        font-size: 1.3rem; } }
+    @media only screen and (min-width: 1200px) {
+      body .section3 h4 {
+        font-size: 200%; } }
   body .section3__recommendation {
     display: flex;
     flex-direction: column; }
     @media only screen and (min-width: 768px) {
       body .section3__recommendation {
         flex-direction: row; } }
+    @media only screen and (min-width: 1024px) {
+      body .section3__recommendation {
+        padding: 2rem; } }
     body .section3__recommendation ul {
       padding: 1rem;
       color: #FFFFFF;
@@ -148,6 +197,9 @@ body .section3 {
       @media only screen and (min-width: 768px) {
         body .section3__recommendation ul {
           text-align: start; } }
+      @media only screen and (min-width: 1200px) {
+        body .section3__recommendation ul {
+          font-size: 150%; } }
   body .section3__contact {
     width: 60%;
     display: flex;
@@ -157,18 +209,21 @@ body .section3 {
       padding: 1rem;
       color: #F4CF1B; }
     body .section3__contact button {
-      margin: 0 1rem;
       background-color: #F4CF1B;
       border: none;
       color: #FFFFFF;
       font-size: 1.3rem;
       border-radius: 10px;
+      padding: 0 .5rem;
       margin: auto;
-      max-width: 55%; }
+      max-width: 50%; }
     body .section3__contact a {
       padding: 1rem;
       color: #FFFFFF;
       text-decoration: underline #F4CF1B; }
+      @media only screen and (min-width: 1200px) {
+        body .section3__contact a {
+          font-size: 150%; } }
   body .section3__test {
     background-color: #D0E5F0;
     padding: 1rem; }
@@ -179,6 +234,9 @@ body .section3 {
       @media only screen and (min-width: 768px) {
         body .section3__test p {
           font-size: 1rem; } }
+      @media only screen and (min-width: 1200px) {
+        body .section3__test p {
+          font-size: 150%; } }
     body .section3__test img {
       width: 7vw; }
     body .section3__test button {
@@ -189,6 +247,9 @@ body .section3 {
       border-radius: 5px;
       color: #FFFFFF;
       width: 40%; }
+      @media only screen and (min-width: 1200px) {
+        body .section3__test button {
+          font-size: 150%; } }
 
 body footer {
   text-align: center;
@@ -197,8 +258,17 @@ body footer {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   padding: 2em .5rem 0; }
+  @media only screen and (min-width: 1024px) {
+    body footer {
+      padding: 2rem;
+      grid-template-columns: .5fr 1fr 1.5fr; } }
   body footer img {
+    width: 7vh;
     grid-column: 1/3; }
+    @media only screen and (min-width: 1024px) {
+      body footer img {
+        grid-column: 1/4;
+        margin-bottom: 2rem; } }
   body footer ul {
     list-style: none; }
     body footer ul button {
@@ -221,17 +291,34 @@ body footer {
         color: #1078AD; }
   body footer .footer__contact h4 {
     color: #1078AD; }
+    @media only screen and (min-width: 1200px) {
+      body footer .footer__contact h4 {
+        font-size: 150%; } }
   body footer .footer__contact p {
     font-weight: bold;
     font-size: .6rem; }
+    @media only screen and (min-width: 1200px) {
+      body footer .footer__contact p {
+        font-size: 120%; } }
   body footer .footer__contact .num {
     color: #369D53;
     font-weight: bold; }
+    @media only screen and (min-width: 1200px) {
+      body footer .footer__contact .num {
+        font-size: 150%; } }
   body footer .footer__apropos {
     font-size: .6rem;
     padding: 2rem;
     grid-column: 1/3;
     grid-row: 3/4; }
+    @media only screen and (min-width: 1024px) {
+      body footer .footer__apropos {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        text-align: start; } }
+    @media only screen and (min-width: 1200px) {
+      body footer .footer__apropos {
+        font-size: 120%; } }
   body footer .blue {
     width: 100vw;
     height: 3vh;
@@ -239,3 +326,7 @@ body footer {
     background-color: #1078AD;
     grid-column: 1/3;
     grid-row: 4/5; }
+    @media only screen and (min-width: 1024px) {
+      body footer .blue {
+        grid-column: 1/4;
+        margin-top: 2rem; } }
