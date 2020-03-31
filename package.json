@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "C'est un projet pour valider les compétences C3N3 (C2N3).",
   "main": "index.js",
-  "dependencies": {
-    "npm-run-all": "^4.1.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.0"
   },
   "scripts": {
@@ -16,7 +15,7 @@
     "watch": "node-sass -w Starter-file/sass -o Starter-file/dist/css",
     "compress": "node-sass --output-style compressed Starter-file/sass -o Starter-file/dist/css",
     "concat": "concat -o Starter-file/dist/css/style.css Starter-file/dist/css/fichier.css Starter-file/dist/css/fichier1.css Starter-file/dist/css/fichier2.css Starter-file/dist/css/fichier3.css",
-    "prefix": "postcss --use autoprefixer -b 'last 5 versions' Starter-file/dist/css/fichier.css -o Starter-file/dist/css/style.prefix.css"
+    "prefix": "postcss Starter-file/dist/css/fichier.css --use autoprefixer --map=false   --output=Starter-file/dist/css/style.css"
   },
   "repository": {
     "type": "git",

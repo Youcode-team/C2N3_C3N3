@@ -1,8 +1,161 @@
+@import "./fichier1.scss";
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    
 }
 body{
-    font-family: 'Cairo', sans-serif;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-image: url(Groupe149.png);
+        img{
+            width: 13%;
+        }
+        nav{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        font-weight: bold;
+                        transition-duration: 0.3s;
+                        &:hover{
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .reminder{
+        background-color: $color2;
+        text-align: center;
+        padding: .5rem;
+        h4{
+            color: $color1;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+    .section1{
+        padding: .5rem;
+        text-align: center;
+        h3{
+            color: $color1;
+        }
+        p{
+            font-weight: bold;
+            color: $color3;
+            padding: 1rem;
+        }
+        button{
+            font-size: 1.3rem;
+            background-image: url(btn.png);
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            width: 80%;
+
+        }
+    }
+    .section2{
+        padding: .5rem;
+        text-align: center;
+        h2{
+            color:$color1;
+            padding: 1rem 3.5rem;
+        }
+        &__symtomes{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__fièvre{
+            width: 50%;
+            text-align: center;
+            img{
+               width: 15vw;
+               height: 10vh;
+            }
+        }
+        &__nausées{
+            width: 50%;
+            text-align: center;
+            img{
+               width: 15vw;
+               height: 10vh;
+
+            }
+        }
+        &__gêne{
+            width: 50%;
+            text-align: center;
+            img{
+               width: 20vw;
+               height: 10vh;
+            }
+        }
+        &__toux{
+            width: 50%;
+            text-align: center;
+            img{
+               width: 20vw;
+               height: 10vh;
+            }
+        }
+    }
+    .section3{
+        padding: 1rem;
+        text-align: center;
+        background-color: $color1;
+        h4{
+            color: $color4;
+        }
+        &__recommendation{
+            display: flex;
+            flex-direction: column;
+            ul{
+                color: $white;
+                font-weight: bold;
+                list-style: none;
+                padding-top: 2rem;
+            }
+            
+        }
+        &__contact{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            h4{
+                color: $color2;
+            }
+            button{
+                background-color: $color2;
+                border: none;
+                color: $white;
+                font-size: 1.3rem;
+                border-radius: 10px;
+
+            }
+            a{
+                color: $white;
+                text-decoration: underline $color2;
+            }
+        }
+    }
 }

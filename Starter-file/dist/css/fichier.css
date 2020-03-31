@@ -1,7 +1,123 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
-
-body {
+  box-sizing: border-box;
   font-family: 'Cairo', sans-serif; }
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-image: url(Groupe149.png); }
+  body header img {
+    width: 13%; }
+  body header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body header nav ul {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      list-style: none; }
+      body header nav ul li a {
+        text-decoration: none;
+        color: #2B2B2C;
+        font-weight: bold;
+        transition-duration: 0.3s; }
+        body header nav ul li a:hover {
+          color: #1078AD; }
+
+body .reminder {
+  background-color: #F4CF1B;
+  text-align: center;
+  padding: .5rem; }
+  body .reminder h4 {
+    color: #1078AD; }
+  body .reminder p {
+    font-weight: bold; }
+
+body .section1 {
+  padding: .5rem;
+  text-align: center; }
+  body .section1 h3 {
+    color: #1078AD; }
+  body .section1 p {
+    font-weight: bold;
+    color: #7F7F7F;
+    padding: 1rem; }
+  body .section1 button {
+    font-size: 1.3rem;
+    background-image: url(btn.png);
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 80%; }
+
+body .section2 {
+  padding: .5rem;
+  text-align: center; }
+  body .section2 h2 {
+    color: #1078AD;
+    padding: 1rem 3.5rem; }
+  body .section2__symtomes {
+    display: flex;
+    flex-wrap: wrap; }
+  body .section2__fièvre {
+    width: 50%;
+    text-align: center; }
+    body .section2__fièvre img {
+      width: 15vw;
+      height: 10vh; }
+  body .section2__nausées {
+    width: 50%;
+    text-align: center; }
+    body .section2__nausées img {
+      width: 15vw;
+      height: 10vh; }
+  body .section2__gêne {
+    width: 50%;
+    text-align: center; }
+    body .section2__gêne img {
+      width: 20vw;
+      height: 10vh; }
+  body .section2__toux {
+    width: 50%;
+    text-align: center; }
+    body .section2__toux img {
+      width: 20vw;
+      height: 10vh; }
+
+body .section3 {
+  padding: 1rem;
+  text-align: center;
+  background-color: #1078AD; }
+  body .section3 h4 {
+    color: #D0E5F0; }
+  body .section3__recommendation {
+    display: flex;
+    flex-direction: column; }
+    body .section3__recommendation ul {
+      color: #FFFFFF;
+      font-weight: bold;
+      list-style: none;
+      padding-top: 2rem; }
+  body .section3__contact {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+    body .section3__contact h4 {
+      color: #F4CF1B; }
+    body .section3__contact button {
+      background-color: #F4CF1B;
+      border: none;
+      color: #FFFFFF;
+      font-size: 1.3rem;
+      border-radius: 10px; }
+    body .section3__contact a {
+      color: #FFFFFF;
+      text-decoration: underline #F4CF1B; }
