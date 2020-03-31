@@ -5,11 +5,14 @@
     border-radius: 10px;padding: .1rem .5rem;
     display: flex;
     align-items: center;
+    &:hover{
+        opacity: .5;
+    }
     img{
         width: 20px;
     }
 }
-@mixin button2($a:1.7rem,$b:80%) {
+@mixin button2($a:1.3rem,$b:80%) {
             font-size: $a;
             font-weight: bold;
             background-image: url(btn.png);
@@ -27,4 +30,12 @@
                         &:hover{
                             color: $color1;
                         }
+}
+
+
+//Responsive
+@mixin tab {
+    @media only screen and (min-width:768px){
+        @content;
+    }
 }

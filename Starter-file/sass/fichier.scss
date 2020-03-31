@@ -43,37 +43,66 @@ body{
         background-color: $color2;
         text-align: center;
         padding: .5rem;
+        font-size: .8rem;
+        padding: .3rem 2rem 0;
         h4{
             color: $color1;
         }
         p{
             font-weight: bold;
+            max-width: 520px;
+            margin: auto;
+
         }
     }
     .section1{
         padding: .5rem;
         text-align: center;
+        @include tab(){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        };
         &___illustration{
             img{
-                width: 95vw;
+                width: 100%;
+                @include tab(){
+                    align-self: center;
+                    grid-column: 1/2;
+                }
             }
         }
-        h3{
-            color: $color1;
-        }
-        p{
-            font-weight: bold;
-            color: $color3;
-            padding: 1rem;
-        }
-        button{
-            @include button2();
+       &__part2{
+                h3{
+                padding: .5rem 4.5rem;
+                color: $color1;
+                @include tab(){
+                    padding: .4rem;
+                }
+            }
+            img{
+                @include tab(){
+                    width: 10%;
+                }
+            }
+            p{
+                font-size: .8rem;
+                font-weight: bold;
+                color: $color3;
+                padding: 1rem;
+            }
+            button{
+                @include button2();
 
+            }
         }
     }
     .section2{
         padding: .5rem;
         text-align: center;
+        @include tab(){
+            padding: 3rem;
+
+            }
         h2{
             color:$color1;
             padding: 1rem 3.5rem;
@@ -126,11 +155,20 @@ body{
         &__recommendation{
             display: flex;
             flex-direction: column;
+            @include tab(){
+                flex-direction: row;
+            }
+           
             ul{
+                padding: 1rem;
                 color: $white;
                 font-weight: bold;
                 list-style: none;
                 padding-top: 2rem;
+                 @include tab(){
+                text-align: start;
+
+                }
             }
             
         }
@@ -140,17 +178,22 @@ body{
             flex-direction: column;
             margin: auto;
             h4{
+                padding: 1rem;
                 color: $color2;
             }
             button{
+                margin: 0 1rem;
                 background-color: $color2;
                 border: none;
                 color: $white;
                 font-size: 1.3rem;
                 border-radius: 10px;
+               margin: auto;
+               max-width: 55%;
 
             }
             a{
+                padding: 1rem;
                 color: $white;
                 text-decoration: underline $color2;
             }
@@ -159,14 +202,19 @@ body{
             background-color: $color4;
             padding: 1rem;
             p{
+                font-size: .6rem;
                 font-weight: bold;
                 color: $color1;
+                @include tab(){
+                    font-size: 1rem;
+
+                    }
             }
             img{
                 width: 7vw;
             }
             button{
-                @include button2($a:1.3rem,$b:40%);
+                @include button2($a:1rem,$b:40%);
             }
             
         }
@@ -177,6 +225,7 @@ body{
         justify-items: center;
         align-items: center;
         grid-template-columns: 1fr 1fr;
+        padding: 2em .5rem 0;
         img{
             grid-column: 1/3;
         }
@@ -191,6 +240,19 @@ body{
                 }
             }
            
+        }
+        .footer__contact{
+            h4{
+                color: $color1;
+            }
+            p{
+                font-weight: bold;
+                font-size: .6rem;
+            }
+            .num{
+                color: $color5;
+                font-weight: bold;
+            }
         }
         .footer__apropos{
             font-size: .6rem;
