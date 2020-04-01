@@ -27,8 +27,38 @@
             border-radius: 5px;
             color: $white;
             width: $b;
+            transition-duration: 0.3s;
+
+            &:hover{
+                opacity: .5;
+                box-shadow: 0px 2px $black;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
 
 }
+
+@mixin button3 {
+            background-color: $color1;
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 1rem auto;
+            padding: 1rem;
+            width: 254px;
+            &:hover{
+                opacity: .5;
+                box-shadow: 0px 2px $black;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+    
+}
+
 @mixin links {
     text-decoration: none;
                         color: $black;

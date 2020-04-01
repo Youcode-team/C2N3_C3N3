@@ -1,0 +1,84 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+@import "./header.scss";
+@import "./warning.scss";
+@import "./symptôme.scss";
+@import "./recommandation.scss";
+@import "./footer.scss";
+
+.information{
+    text-align: center;
+    h3{
+        color: $color1;
+        padding: 2rem;
+        max-width: 440px;
+        margin: auto;
+        @include laptop{
+            font-size: 170%;
+        }
+    }
+    p{
+            font-weight: bold;
+            font-size: .8rem;
+            margin: auto;
+            
+        }
+
+    &__advices{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 2rem;
+        @include laptop{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        .conseil{
+            @include laptop{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 80%;
+            
+            }
+            div{
+                display: grid;
+                grid-template-rows: 1.5fr 1fr;
+                justify-items: center;
+                align-self: center;
+                grid-gap: 1rem;
+                margin-top: 2rem;
+               
+                
+               
+            }
+        }
+        
+    }
+    &__restez{
+        padding: 1rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        background-color: $color4;
+        @include laptop{
+            padding: 2rem 1rem;
+            flex-direction: row;
+            align-items: center;
+        }
+        p{
+            padding: 0 3rem 2rem ;
+            color: $color6;
+            font-size: 1rem;
+            @include laptop{
+                font-size: 130%;
+                margin: 0 5rem;
+            }
+
+        }
+        button{
+            @include button3();
+
+        }
+    }
+   
+}

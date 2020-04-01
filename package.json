@@ -14,7 +14,7 @@
     "compil": "node-sass Starter-file/sass -o Starter-file/dist/css",
     "watch": "node-sass -w Starter-file/sass -o Starter-file/dist/css",
     "compress": "node-sass --output-style compressed Starter-file/sass -o Starter-file/dist/css",
-    "concat": "concat -o Starter-file/dist/css/style.css Starter-file/dist/css/fichier.css Starter-file/dist/css/fichier1.css Starter-file/dist/css/fichier2.css Starter-file/dist/css/fichier3.css",
+    "concat": "concat -o Starter-file/dist/css/fichier.css Starter-file/dist/css/fichier.css Starter-file/dist/css/header.css Starter-file/dist/css/warning.css Starter-file/dist/css/section1.css Starter-file/dist/css/symptôme.css Starter-file/dist/css/recommandation.css Starter-file/dist/css/footer.css",
     "prefix": "postcss Starter-file/dist/css/fichier.css --use autoprefixer --map=false   --output=Starter-file/dist/css/style.css"
   },
   "repository": {

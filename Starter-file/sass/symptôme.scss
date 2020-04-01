@@ -1,0 +1,81 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;}
+
+.section2{
+    padding: .5rem;
+    text-align: center;
+    @include tab(){
+        padding: 3rem;
+
+        }
+    h2{
+        color:$color1;
+        padding: 1rem 3.5rem;
+        @include desktop(){
+            font-size: 200%;
+        }
+    }
+    &__symtomes{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @include desktop(){
+            padding: 2rem 4rem;
+        }
+    }
+    &__fièvre{
+        width: 50%;
+        text-align: center;
+        img{
+           width: 15vw;
+           height: 10vh;
+           @include desktop(){
+            height: 20vh;
+    }
+        }
+    }
+    &__nausées{
+        width: 50%;
+        text-align: center;
+        img{
+           width: 15vw;
+           height: 10vh;
+           @include desktop(){
+                width: 12vw;
+                height: 20vh;
+        }
+
+        }
+    }
+    &__gêne{
+        width: 50%;
+        text-align: center;
+        img{
+           width: 20vw;
+           height: 15vh;
+           @include desktop(){
+            width: 12vw;
+            height: 20vh;
+    }
+          
+        }
+    }
+    &__toux{
+        width: 50%;
+        text-align: center;
+        img{
+           width: 20vw;
+           height: 15vh;
+           @include desktop(){
+            width: 12vw;
+            height: 20vh;
+    }
+        }
+    }
+}
