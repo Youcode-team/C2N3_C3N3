@@ -5,8 +5,15 @@
     border-radius: 10px;padding: .1rem .5rem;
     display: flex;
     align-items: center;
+    height: 1.5rem;
+    font-size: .7rem;
+    transition-duration: 0.3s;
     &:hover{
         opacity: .5;
+        box-shadow: 0px 2px $black;
+    }
+    &:active{
+        transform: scale(0.9);
     }
     img{
         width: 20px;
