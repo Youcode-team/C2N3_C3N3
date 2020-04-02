@@ -18,6 +18,7 @@
         font-size: 170%;
     }
     &___illustration{
+        padding: 1rem 4rem;
         img{
             width: 100%;
             @include tab(){
@@ -27,6 +28,7 @@
         }
     }
    &__part2{
+       line-height: 40px;
             h3{
             padding: .5rem 4.5rem;
             color: $color1;
@@ -36,7 +38,7 @@
         }
         img{
             @include tab(){
-                width: 10%;
+                width: 8%;
             }
         }
         p{
