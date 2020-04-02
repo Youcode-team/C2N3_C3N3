@@ -1,1 +1,18 @@
-*{margin:0px;padding:0px;box-sizing:border-box;font-family:'Cairo', sans-serif}.reminder{background-color:#F4CF1B;text-align:center;padding:.5rem;font-size:.8rem;padding:.3rem 2rem 0}.reminder h4{color:#1078AD}.reminder p{font-weight:bold;max-width:520px;margin:auto}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif; }
+
+.reminder {
+  background-color: #F4CF1B;
+  text-align: center;
+  padding: .5rem;
+  font-size: .8rem;
+  padding: .3rem 2rem 0; }
+  .reminder h4 {
+    color: #1078AD; }
+  .reminder p {
+    font-weight: bold;
+    max-width: 520px;
+    margin: auto; }

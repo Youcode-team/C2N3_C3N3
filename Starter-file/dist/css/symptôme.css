@@ -1,1 +1,65 @@
-﻿*{margin:0px;padding:0px;box-sizing:border-box;font-family:'Cairo', sans-serif}.section2{padding:.5rem;text-align:center}@media only screen and (min-width: 768px){.section2{padding:3rem}}.section2 h2{color:#1078AD;padding:1rem 3.5rem}@media only screen and (min-width: 1200px){.section2 h2{font-size:200%}}.section2__symtomes{display:flex;justify-content:space-around;flex-wrap:wrap}@media only screen and (min-width: 1200px){.section2__symtomes{padding:2rem 4rem}}.section2__fièvre{width:50%;text-align:center}.section2__fièvre img{width:15vw;height:10vh}@media only screen and (min-width: 1200px){.section2__fièvre img{height:20vh}}.section2__nausées{width:50%;text-align:center}.section2__nausées img{width:15vw;height:10vh}@media only screen and (min-width: 1200px){.section2__nausées img{width:12vw;height:20vh}}.section2__gêne{width:50%;text-align:center}.section2__gêne img{width:20vw;height:15vh}@media only screen and (min-width: 1200px){.section2__gêne img{width:12vw;height:20vh}}.section2__toux{width:50%;text-align:center}.section2__toux img{width:20vw;height:15vh}@media only screen and (min-width: 1200px){.section2__toux img{width:12vw;height:20vh}}
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif; }
+
+.section2 {
+  padding: .5rem;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .section2 {
+      padding: 3rem; } }
+  .section2 h2 {
+    color: #1078AD;
+    padding: 1rem 3.5rem; }
+    @media only screen and (min-width: 1200px) {
+      .section2 h2 {
+        font-size: 200%; } }
+  .section2__symtomes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    @media only screen and (min-width: 1200px) {
+      .section2__symtomes {
+        padding: 2rem 4rem; } }
+  .section2__fièvre {
+    width: 50%;
+    text-align: center; }
+    .section2__fièvre img {
+      width: 15vw;
+      height: 10vh; }
+      @media only screen and (min-width: 1200px) {
+        .section2__fièvre img {
+          height: 20vh; } }
+  .section2__nausées {
+    width: 50%;
+    text-align: center; }
+    .section2__nausées img {
+      width: 15vw;
+      height: 10vh; }
+      @media only screen and (min-width: 1200px) {
+        .section2__nausées img {
+          width: 12vw;
+          height: 20vh; } }
+  .section2__gêne {
+    width: 50%;
+    text-align: center; }
+    .section2__gêne img {
+      width: 20vw;
+      height: 15vh; }
+      @media only screen and (min-width: 1200px) {
+        .section2__gêne img {
+          width: 12vw;
+          height: 20vh; } }
+  .section2__toux {
+    width: 50%;
+    text-align: center; }
+    .section2__toux img {
+      width: 20vw;
+      height: 15vh; }
+      @media only screen and (min-width: 1200px) {
+        .section2__toux img {
+          width: 12vw;
+          height: 20vh; } }

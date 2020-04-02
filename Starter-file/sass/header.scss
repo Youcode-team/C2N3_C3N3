@@ -15,7 +15,10 @@ header{
     background-image: url(Groupe149.png);
     
     img{
-        width: 5%;
+        width: 13%;
+        @include tab(){
+            width: 6%;
+        }
     }
     nav{
         width: 60%;

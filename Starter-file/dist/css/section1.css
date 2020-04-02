@@ -23,7 +23,8 @@
           align-self: center;
           grid-column: 1/2; } }
   .section1__part2 {
-    line-height: 40px; }
+    line-height: 40px;
+    align-self: center; }
     .section1__part2 h3 {
       padding: .5rem 4.5rem;
       color: #1078AD; }

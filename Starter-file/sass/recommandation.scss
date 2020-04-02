@@ -65,7 +65,16 @@
             border-radius: 10px;
             padding: 0 .5rem;
             margin: auto;
-            max-width: 50%;
+            max-width: 80%;
+            transition-duration: 0.3s;
+            &:hover{
+                box-shadow: -2px 2px $black;
+                transform: scale(1.1);
+
+            }
+            &:active{
+                transform: scale(0.9);
+            }
 
         }
         a{
