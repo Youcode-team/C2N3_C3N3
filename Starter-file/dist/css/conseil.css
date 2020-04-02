@@ -398,7 +398,8 @@ footer {
       font-size: 1rem;
       margin: 1rem auto;
       padding: 1rem;
-      width: 254px; }
+      width: 254px;
+      transition-duration: 0.3s; }
       .information__info button:hover {
         opacity: .5;
         box-shadow: 0px 2px #2B2B2C; }

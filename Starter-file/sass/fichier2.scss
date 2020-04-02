@@ -50,6 +50,7 @@
             margin: 1rem auto;
             padding: 1rem;
             width: 254px;
+            transition-duration: 0.3s;
             &:hover{
                 opacity: .5;
                 box-shadow: 0px 2px $black;
