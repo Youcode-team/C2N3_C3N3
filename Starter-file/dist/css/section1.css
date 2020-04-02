@@ -5,7 +5,6 @@
   font-family: 'Cairo', sans-serif; }
 
 .section1 {
-  padding: .5rem;
   text-align: center; }
   @media only screen and (min-width: 768px) {
     .section1 {
@@ -16,6 +15,9 @@
       font-size: 170%; } }
   .section1___illustration {
     padding: 1rem 4rem; }
+    @media only screen and (min-width: 768px) {
+      .section1___illustration {
+        padding: 0px; } }
     .section1___illustration img {
       width: 100%; }
       @media only screen and (min-width: 768px) {
@@ -23,7 +25,7 @@
           align-self: center;
           grid-column: 1/2; } }
   .section1__part2 {
-    line-height: 40px;
+    line-height: 30px;
     align-self: center; }
     .section1__part2 h3 {
       padding: .5rem 4.5rem;
