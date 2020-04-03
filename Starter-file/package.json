@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile_sass": "node-sass -w sass/fichier.scss dist/css/style.css",
+    "compress_sass": "node-sass --output-style=compressed -w sass/fichier.scss dist/css/style.css",
+    "prefix_css": "postcss --watch=true --no-map --use autoprefixer -o dist/css/style.css sass/fichier.scss",
+    "concat-css": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
+  }
 }

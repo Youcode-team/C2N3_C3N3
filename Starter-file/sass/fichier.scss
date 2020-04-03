@@ -9,8 +9,8 @@ header{
 }
 p{
     color: red;
-    margin-left: 20px;
-    padding-top: 7px;
-    padding-right: 13px;
-
+    margin-left: 12px;
+}
+::placeholder{
+    max-width: 130px;
 }
