@@ -7,59 +7,41 @@
 
 .section2 {
   padding: .5rem;
-  text-align: center; }
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: auto; }
+  @media only screen and (min-width: 1200px) {
+    .section2 {
+      padding: 2rem 4rem; } }
   @media only screen and (min-width: 768px) {
     .section2 {
-      padding: 3rem; } }
+      padding: 3rem;
+      grid-column-gap: 5rem; } }
   .section2 h2 {
     color: #1078AD;
-    padding: 1rem 3.5rem; }
+    padding: 1rem 3.5rem;
+    grid-column: 1/3; }
     @media only screen and (min-width: 1200px) {
       .section2 h2 {
         font-size: 200%; } }
-  .section2__symtomes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
+  .section2 h3 {
+    color: #1078AD;
+    padding: 1rem 3.5rem;
+    grid-column: 1/3;
+    grid-row: 4/5; }
     @media only screen and (min-width: 1200px) {
-      .section2__symtomes {
-        padding: 2rem 4rem; } }
-  .section2__fièvre {
-    width: 50%;
-    text-align: center; }
-    .section2__fièvre img {
-      width: 15vw;
-      height: 10vh; }
-      @media only screen and (min-width: 1200px) {
-        .section2__fièvre img {
-          height: 20vh; } }
-  .section2__nausées {
-    width: 50%;
-    text-align: center; }
-    .section2__nausées img {
-      width: 15vw;
-      height: 10vh; }
-      @media only screen and (min-width: 1200px) {
-        .section2__nausées img {
-          width: 12vw;
-          height: 20vh; } }
-  .section2__gêne {
-    width: 50%;
-    text-align: center; }
-    .section2__gêne img {
-      width: 20vw;
-      height: 15vh; }
-      @media only screen and (min-width: 1200px) {
-        .section2__gêne img {
-          width: 12vw;
-          height: 20vh; } }
-  .section2__toux {
-    width: 50%;
-    text-align: center; }
-    .section2__toux img {
-      width: 20vw;
-      height: 15vh; }
-      @media only screen and (min-width: 1200px) {
-        .section2__toux img {
-          width: 12vw;
-          height: 20vh; } }
+      .section2 h3 {
+        font-size: 200%; } }
+  .section2 p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1A519E; }
+  .section2 img {
+    width: 70%; }
+  .section2__fièvre img {
+    width: 30%; }
+  .section2 div {
+    padding: 1rem;
+    width: 100%; }

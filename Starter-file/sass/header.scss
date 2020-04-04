@@ -38,6 +38,9 @@ header{
             list-style: none;
            
             li{
+                span{
+                    color: $color1;
+                }
                 a{
                     @include links;
                 }

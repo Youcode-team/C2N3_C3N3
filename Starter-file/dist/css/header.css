@@ -31,6 +31,8 @@ header {
       display: flex;
       justify-content: space-around;
       list-style: none; }
+      header nav ul li span {
+        color: #1078AD; }
       header nav ul li a {
         text-decoration: none;
         color: #2B2B2C;

@@ -10,72 +10,55 @@
 .section2{
     padding: .5rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: auto;
+    @include desktop(){
+        padding: 2rem 4rem;
+    }
     @include tab(){
         padding: 3rem;
+        grid-column-gap: 5rem;
+
 
         }
     h2{
         color:$color1;
         padding: 1rem 3.5rem;
+        grid-column: 1/3;
         @include desktop(){
             font-size: 200%;
         }
     }
-    &__symtomes{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    h3{
+        color:$color1;
+        padding: 1rem 3.5rem;
+        grid-column: 1/3;
+        grid-row: 4/5;
         @include desktop(){
-            padding: 2rem 4rem;
+            font-size: 200%;
         }
+    }      
+    p{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $color6;
+    }    
+    img{
+        width: 70%;
     }
+        
+    
     &__fièvre{
-        width: 50%;
-        text-align: center;
         img{
-           width: 15vw;
-           height: 10vh;
-           @include desktop(){
-            height: 20vh;
-    }
+            width: 30%;
         }
     }
-    &__nausées{
-        width: 50%;
-        text-align: center;
-        img{
-           width: 15vw;
-           height: 10vh;
-           @include desktop(){
-                width: 12vw;
-                height: 20vh;
-        }
-
-        }
+    div{
+        padding: 1rem;
+        width: 100%;
     }
-    &__gêne{
-        width: 50%;
-        text-align: center;
-        img{
-           width: 20vw;
-           height: 15vh;
-           @include desktop(){
-            width: 12vw;
-            height: 20vh;
-    }
-          
-        }
-    }
-    &__toux{
-        width: 50%;
-        text-align: center;
-        img{
-           width: 20vw;
-           height: 15vh;
-           @include desktop(){
-            width: 12vw;
-            height: 20vh;
-    }
-        }
-    }
+   
+    
 }

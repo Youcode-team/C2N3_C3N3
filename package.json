@@ -17,6 +17,9 @@
     "concat": "concat -o Starter-file/dist/css/fichier.css Starter-file/dist/css/fichier.css Starter-file/dist/css/header.css Starter-file/dist/css/warning.css Starter-file/dist/css/section1.css Starter-file/dist/css/symptôme.css Starter-file/dist/css/recommandation.css Starter-file/dist/css/footer.css",
     "prefix": "postcss Starter-file/dist/css/fichier.css --use autoprefixer --map=false   --output=Starter-file/dist/css/style.css"
   },
+"browserslist":[
+  "last 4 versions"
+],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yassineuuu/C2N3_C3N3.git"
