@@ -1,0 +1,90 @@
+//Mixins
+@mixin button1 {
+    background-color: transparent;
+    border: 2px solid #1078AD;
+    border-radius: 10px;padding: .1rem .5rem;
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    font-size: .7rem;
+    transition-duration: 0.3s;
+    &:hover{
+        opacity: .5;
+        box-shadow: 0px 2px $black;
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    img{
+        width: 20px;
+        margin: 0;
+    }
+}
+@mixin button2($a:1.3rem,$b:80%) {
+            font-size: $a;
+            font-weight: bold;
+            background-image: url(btn.png);
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            width: $b;
+            transition-duration: 0.3s;
+
+            &:hover{
+                opacity: .5;
+                box-shadow: 0px 2px $black;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+
+}
+
+@mixin button3 {
+            background-color: $color1;
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 1rem auto;
+            padding: 1rem;
+            width: 254px;
+            transition-duration: 0.3s;
+            &:hover{
+                opacity: .5;
+                box-shadow: 0px 2px $black;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+    
+}
+
+@mixin links {
+    text-decoration: none;
+                        color: $black;
+                        font-weight: bold;
+                        transition-duration: 0.3s;
+                        &:hover{
+                            color: $color1;
+                        }
+}
+
+
+//Responsive
+@mixin tab {
+    @media only screen and (min-width:768px){
+        @content;
+    }
+}
+@mixin laptop {
+    @media only screen and (min-width:1024px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width:1200px){
+        @content;
+    }
+}

@@ -1,0 +1,53 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;}
+    
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url(Groupe149.png);
+    
+    img{
+        width: 13%;
+        @include tab(){
+            width: 6%;
+        }
+    }
+    nav{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include laptop(){
+            width: 40%;
+        }
+        @include desktop(){
+            font-size: 150%;
+        }
+        ul{
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+           
+            li{
+                span{
+                    color: $color1;
+                }
+                a{
+                    @include links;
+                }
+            }
+        }
+        button{
+           @include button1();
+        }
+    }
+}

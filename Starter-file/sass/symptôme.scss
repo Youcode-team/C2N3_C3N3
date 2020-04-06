@@ -1,0 +1,68 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;}
+
+.section2{
+    padding: .5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: auto;
+    @include desktop(){
+        padding: 2rem 4rem;
+    }
+    @include tab(){
+        padding: 3rem;
+        grid-column-gap: 5rem;
+
+
+        }
+    h2{
+        color:$color1;
+        padding: 1rem 3.5rem;
+        grid-column: 1/3;
+        @include desktop(){
+            font-size: 200%;
+        }
+    }
+    h3{
+        color:$color1;
+        padding: 1rem 3.5rem;
+        grid-column: 1/3;
+        grid-row: 4/5;
+        @include desktop(){
+            font-size: 200%;
+        }
+    }      
+    p{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $color6;
+    }    
+    img{
+        width: 70%;
+        transition-duration: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+        
+    
+    &__fièvre{
+        img{
+            width: 30%;
+        }
+    }
+    div{
+        padding: 1rem;
+        width: 100%;
+    }
+   
+    
+}

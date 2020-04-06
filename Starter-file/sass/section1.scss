@@ -1,0 +1,64 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;}
+
+.section1{
+    text-align: center;
+    @include tab(){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    };
+    @include desktop(){
+        font-size: 170%;
+    }
+    &___illustration{
+        padding: 1rem 4rem;
+        @include tab(){
+            padding: 0px;
+        }
+        img{
+            width: 100%;
+            @include tab(){
+                align-self: center;
+                grid-column: 1/2;
+            }
+        }
+    }
+   &__part2{
+       line-height: 30px;
+       align-self: center;
+            h3{
+            padding: .5rem 4.5rem;
+            color: $color1;
+            @include tab(){
+                padding: .4rem;
+            }
+        }
+        img{
+            @include tab(){
+                width: 8%;
+            }
+        }
+        p{
+            font-size: .8rem;
+            font-weight: bold;
+            color: $color3;
+            padding: 1rem;
+            @include desktop(){
+                font-size: 103%;
+            }
+        }
+        button{
+            @include button2();
+            @include desktop(){
+                font-size: 120%;
+            }
+
+        }
+    }
+}

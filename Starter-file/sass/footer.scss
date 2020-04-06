@@ -1,0 +1,93 @@
+@import "./fichier1.scss";
+@import "./fichier2.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;}
+    
+footer{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em .5rem 0;
+    @include laptop(){
+        padding: 2rem;
+        
+
+        grid-template-columns: .5fr 1fr 1.5fr;
+    }
+    img{
+        width: 7vh;
+        grid-column: 1/3;
+        
+        @include laptop(){
+            grid-column: 1/4;
+            margin-bottom: 2rem;
+        }
+    }
+    ul{
+        list-style: none;
+        button{
+            @include button1();
+        }
+        li{
+            a{
+                @include links;
+            }
+        }
+       
+    }
+    .footer__contact{
+        h4{
+            color: $color1;
+            @include desktop(){
+                font-size: 150%;
+            }
+        }
+        p{
+            font-weight: bold;
+            font-size: .6rem;
+            @include desktop(){
+                font-size: 120%;
+            }
+        }
+        .num{
+            color: $color5;
+            font-weight: bold;
+            @include desktop(){
+                font-size: 150%;
+            }
+        }
+    }
+    .footer__apropos{
+        font-size: .6rem;
+        padding: 2rem;
+        grid-column: 1/3;
+        grid-row: 3/4;
+        @include laptop(){
+            grid-column: 3/4;
+            grid-row: 2/3;
+            text-align: start;
+        }
+        @include desktop(){
+            font-size: 120%;
+        }
+    }
+    .blue{
+        width: 100vw;
+        height: 3vh;
+        border-radius: 5px 5px 0 0;
+        background-color: $color1;
+        grid-column: 1/3;
+        grid-row: 4/5;
+        @include laptop(){
+            grid-column: 1/4;
+            margin-top: 2rem;
+        }
+    }
+
+}
