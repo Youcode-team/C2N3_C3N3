@@ -46,7 +46,10 @@
                 align-self: center;
                 grid-gap: 1rem;
                 margin-top: 2rem;
-               
+                transition-duration: 0.3s;
+                &:hover{
+                    transform: scale(1.3);
+                }
                 
                
             }

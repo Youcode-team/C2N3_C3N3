@@ -39,7 +39,10 @@
     font-weight: bold;
     color: #1A519E; }
   .section2 img {
-    width: 70%; }
+    width: 70%;
+    transition-duration: 0.3s; }
+    .section2 img:hover {
+      transform: scale(1.1); }
   .section2__fièvre img {
     width: 30%; }
   .section2 div {
