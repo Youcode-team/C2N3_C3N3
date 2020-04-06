@@ -1,0 +1,89 @@
+$colorbar:#F4CF1B;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'cairo';
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.barre {
+    width: 100%;
+}
+.barre1 {
+    width: 100%;
+    background-image: url("png/Merged-bar-51.png");
+    background-color: #D0E5F0;
+    ul{
+        li:nth-child(3){
+            a{
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                display: flex;
+                padding-left: 10px;
+                font-size: 1.3vw;
+                font-weight: 600;
+                font-family: 'cairo';
+                
+                img{
+                    padding: 10px;
+                }
+                &:hover{
+                    background-color: $colorbar;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 4%;
+        margin: 0.5% auto auto 2%;
+    }
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: baseline;
+    width: 10%;
+    height: auto;
+    list-style: none;
+    float: right;
+    font-size: 1.3vw;
+    margin-right: 20%;
+    margin-top: 1.5%;
+
+    & li {
+        margin-right: 35%;
+        align-items: center;
+
+        & a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+
+            & .imgMenu {
+                width: 7vw;
+                height: auto;
+                padding-left: 20%;
+            }
+
+        }
+
+    }
+}
+
+
+.info {
+    width: 100%;
+    background: $colorbar;
+    font-size: 1.2vw;
+
+    &__txt {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

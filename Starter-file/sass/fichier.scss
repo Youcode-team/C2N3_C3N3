@@ -1,16 +1,1 @@
-body{
-    background-color: #fff;
-    margin-top: 5px;
-}
-header{
-    font-size: 24x;
-    border: 1px solid white;
-    border-radius: 2px;
-}
-p{
-    color: red;
-    margin-left: 12px;
-}
-::placeholder{
-    max-width: 130px;
-}
+@import '_bar.scss','_main.scss','_footer.scss','_symptome.scss','_recom.scss';

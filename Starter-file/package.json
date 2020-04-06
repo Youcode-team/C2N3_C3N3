@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile_sass": "node-sass -w sass/fichier.scss dist/css/style.css",
-    "compress_sass": "node-sass --output-style=compressed -w sass/fichier.scss dist/css/style.css",
-    "prefix_css": "postcss --watch=true --no-map --use autoprefixer -o dist/css/style.css sass/fichier.scss",
-    "concat-css": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.css"
+    "watch:sass": "node-sass sass/fichier.scss dist/css/style.css --watch",
+    "compile:sass": "node-sass sass/fichier.scss dist/css/style.comp.css",
+    "concat:css": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.concat.css  -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +18,8 @@
     "concat": "^1.0.3",
     "node-sass": "^4.13.1",
     "postcss-cli": "^7.1.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
