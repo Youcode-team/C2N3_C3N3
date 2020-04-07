@@ -1,0 +1,28 @@
+{
+  "name": "c2n3_c3n3",
+  "version": "1.0.0",
+  "description": "node sass",
+  "main": "index.js",
+  "scripts": {
+     "compile_sass": "node-sass --output-style=compressed -w Starter-file/sass/fichier.scss Starter-file/dist/css/style.css",
+     "prefix_css": "postcss --watch=true --no-map --use autoprefixer -o Starter-file/dist/css/style.css Starter-file/sass/fichier.scss",
+     "concat-css": "concat -o Starter-file/dist/css/style.concat.css Starter-file/dist/css/style.css Starter-file/dist/css/add.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ennadifi-2020/C2N3_C3N3.git"
+  },
+  "author": "ennadifi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ennadifi-2020/C2N3_C3N3/issues"
+  },
+  "homepage": "https://github.com/Ennadifi-2020/C2N3_C3N3#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}
