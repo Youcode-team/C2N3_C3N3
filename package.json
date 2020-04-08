@@ -1,0 +1,19 @@
+{
+  "name": "c2n3_c3n3",
+  "version": "1.0.0",
+  "description": "C'est un projet pour valider les compétences C3N3 (C2N3).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youcode-team/C2N3_C3N3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youcode-team/C2N3_C3N3/issues"
+  },
+  "homepage": "https://github.com/Youcode-team/C2N3_C3N3#readme"
+}

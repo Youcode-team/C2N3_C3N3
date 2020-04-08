@@ -1,0 +1,246 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'cairo';
+  font-size: 16px;
+}
+
+.topbar {
+  width: 100%;
+  background: url("/dist/img/blue.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bar1 {
+  width: 100%;
+}
+
+.bar1logo {
+  max-width: 4%;
+  margin: 0.5% auto auto 2%;
+}
+
+ul {
+  width: 10%;
+  height: auto;
+  list-style: none;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  font-size: 1.3vw;
+  margin-right: 20%;
+  margin-top: 1.5%;
+}
+
+ul li {
+  margin-right: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+ul li a .imgMenu {
+  position: absolute;
+  width: 1.5;
+  height: auto;
+  border: 1px;
+  margin-left: 37px;
+  margin-top: 0.8%;
+}
+
+.covid {
+  border: 2px solid #1078AD;
+  border-radius: 10px;
+  padding: 0% 18%;
+  /* margin-left: -32px; */
+  width: 87px;
+  height: 38px;
+}
+
+.nav_discription {
+  background-color: #F4CF1B;
+  text-align: center;
+  padding: 10px 29%;
+}
+
+.nav_discription p {
+  color: #1078AD;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/************* premiere section *************/
+.sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec1__bg {
+  padding: 20px;
+}
+
+.sec1__content {
+  padding: 20px;
+  text-align: center;
+}
+
+.sec1__content h1 {
+  font-size: 30px;
+  line-height: 35px;
+  color: #1078AD;
+}
+
+.sec__element {
+  margin-top: 10px;
+}
+
+.sec1__content p {
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #8f8e8e;
+  margin: 10px 94px;
+}
+
+.sec1__content button {
+  background-color: #1078AD;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  width: 85%;
+  height: 50px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sec1__content button:hover {
+  background-color: #479ec9;
+}
+
+.symptome__para {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5%;
+  color: #1078AD;
+}
+
+.symptome__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.symptome__container--size {
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.caption {
+  font-family: Cairo;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.suggestions__title {
+  font-family: cairo;
+  font-size: 2.5em;
+  text-align: center;
+  color: #1078AD;
+}
+
+.caption {
+  display: block;
+}
+
+/***************** deuxieme section******************/
+.genéral__title {
+  color: #1078AD;
+  font-size: 27px;
+  margin-bottom: 7px;
+}
+
+.genéral__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 0px;
+  margin: 6% 5%;
+}
+
+.genéral__container .p1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.genéral__container .p2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-top: 60px;
+}
+
+.genéral__container .p3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.genéral__container .p4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.img1 {
+  width: 30%;
+  height: 58%;
+}
+
+.img1 .img2 {
+  width: 30%;
+  height: 40%;
+}
+/*# sourceMappingURL=main.css.map */
