@@ -10,9 +10,6 @@ $primary_blanc: #ffffff;
 $primary_noir: #000000;
 $primary_jaune: #F4CF1B;
 $primary_vert: #189118;
-/************* MIXIN **************/
-
-
 
 body {
     font-family: 'cairo';
@@ -114,6 +111,7 @@ ul {
     font-size: 30px;
     line-height: 35px;
     color: $primary_bleu-fonce;
+    margin-bottom: 10px;
 }
 .sec__element{
     margin-top: 10px;
@@ -301,14 +299,17 @@ ul {
     .sec4__button{
         color: $primary_blanc;
         background-color: $primary_bleu-fonce;
-        height: 32px;
+        height: 40px;
         width: 40%;
         cursor: pointer;
         border: 1px;
         border-color: $primary_bleu-fonce;
-        border-radius: 2px;
+        border-radius: 7px;
         font-size: 20px;
         margin-bottom: 24px;
+    }
+    .sec4__button:hover{
+        background-color: #71b7da;
     }
 }
 /************************** footer***************************/
