@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-/************variable*************/
+/************VARIABLES*************/
 $primary_bleu-fonce: #1078AD;
 $primary_bleu-light: #2086b9;
 $primary_gris: #8d8a8a;
@@ -10,6 +10,9 @@ $primary_blanc: #ffffff;
 $primary_noir: #000000;
 $primary_jaune: #F4CF1B;
 $primary_vert: #189118;
+/************* MIXIN **************/
+
+
 
 body {
     font-family: 'cairo';
