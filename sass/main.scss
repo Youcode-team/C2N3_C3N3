@@ -12,7 +12,6 @@
     font-size: 20px;
     text-decoration: none;
     outline: 0;
-    cursor: pointer;
 }
 
 @mixin Conseil{
@@ -44,7 +43,7 @@
         justify-content: space-between;
         width: 100%;
         height: 100px;
-        background-image: url('../../../Design/Assets/SVG/Merged bar-1.svg');
+        background-image: url('../Design/Assets/SVG/Merged bar-1.svg');
         padding: 10px;
             div{
             
@@ -69,7 +68,7 @@
             #section1{
                 width: 100%;
                 height: 160px;
-                background-image: url('../../../Design/Assets/SVG/En chiffres-3.svg');
+                background-image: url('../Design/Assets/SVG/En chiffres-3.svg');
                 background-repeat: no-repeat;
                 background-size: 120%;
                 background-position-x: -40px;
@@ -276,7 +275,7 @@
             }
             #footer2{
                 height: 60px;
-                background-image: url('../../../Design/Assets/png/En chiffres-30@2x.png');
+                background-image: url('../Design/Assets/png/En chiffres-30@2x.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
