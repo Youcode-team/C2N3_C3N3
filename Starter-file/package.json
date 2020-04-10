@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/fichier.scss dist/css/style.css --watch",
+    "watch:sasss": "node-sass sass/protect.scss dist/css/style1.css --watch",
     "compile:sass": "node-sass sass/fichier.scss dist/css/style.comp.css",
     "concat:css": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.concat.css  -o dist/css/style.prefix.css",

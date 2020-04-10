@@ -1,0 +1,48 @@
+
+.secprotect{
+    text-align: center;
+    margin-bottom: 4%;
+    h1{
+        margin:3% 0;
+    }
+    .protect__last{
+        text-align: center;
+    }
+}
+.protect{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__cart{
+        margin: 0 auto;
+        padding: 5% 10% 2%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.sectinfo{
+    background-color: #D0E5F0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 200px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    &__btn{
+        border: 1px solid #1078AD;
+        border-radius: 4px;
+        background-color: #1078AD;
+        font-size: 16px;
+        padding: 6px;
+        width: 50%;
+        a{
+            color: white;
+            text-decoration-line: none;
+            font-family: 'Cairo', sans-serif;
+            
+        }
+
+    }
+}

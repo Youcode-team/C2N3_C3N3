@@ -1,84 +1,82 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: 'cairo';
+  font-family: "Cairo", sans-serif;
   box-sizing: border-box;
   font-size: 16px; }
 
-.topbar {
+.barre, .barre1 {
   width: 100%; }
 
-.bar1 {
-  width: 100%;
-  background-image: url("/Design/Assets/png/Merged-bar-51.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.barre1 {
+  background-image: url("png/Merged-bar-51.png");
   background-color: #D0E5F0; }
-  .bar1 ul li:nth-child(3) a {
+  .barre1 ul li:nth-child(3) a {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
     padding-left: 10px;
     font-size: 1.3vw;
     font-weight: 600;
-    font-family: cairo; }
-    .bar1 ul li:nth-child(3) a img {
+    font-family: "Cairo", sans-serif; }
+    .barre1 ul li:nth-child(3) a img {
       padding: 10px; }
-    .bar1 ul li:nth-child(3) a:hover {
+    .barre1 ul li:nth-child(3) a:hover {
       background-color: #F4CF1B; }
-  .bar1__logo {
+  .barre1__logo {
     max-width: 4%;
     margin: 0.5% auto auto 2%; }
 
 ul {
-  width: 10%;
-  height: auto;
-  list-style: none;
-  float: right;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: baseline;
+  width: 10%;
+  height: auto;
+  list-style: none;
+  float: right;
   font-size: 1.3vw;
   margin-right: 20%;
   margin-top: 1.5%; }
-  ul li {
-    margin-right: 35%;
-    align-items: center; }
-    ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: 600; }
-      ul li a .imgMenu {
-        width: 7vw;
-        height: auto;
-        padding-left: 20%; }
 
-.bar2 {
+ul li {
+  margin-right: 35%;
+  align-items: center; }
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600; }
+    ul li a .imgMenu {
+      width: 7vw;
+      height: auto;
+      padding-left: 20%; }
+
+.info {
   width: 100%;
   background: #F4CF1B;
   font-size: 1.2vw; }
-  .bar2__txtbar {
+  .info__txt {
     margin: 0 auto;
     text-align: center; }
 
-.headerHero {
+.headertest {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
 
-.mainImg {
+.head {
   width: 45%;
   height: auto;
   padding-left: 5%; }
-  .mainImg__groupe {
+  .head__groupe {
     width: 100%;
     height: auto;
     padding: 3%; }
@@ -89,31 +87,29 @@ ul {
   text-align: center;
   font-size: 1vw;
   padding-right: 5%; }
-  .txtContent__tit1 {
+  .txtContent__title1 {
     color: #1078AD; }
-  .txtContent__image {
+  .txtContent__img {
     max-width: 20%;
     height: auto; }
-  .txtContent__tit2 {
+  .txtContent__title2 {
     color: #7F7F7F; }
+  .txtContent .btn1 {
+    width: 70%;
+    height: auto;
+    margin-top: 2%;
+    background: #1078AD;
+    padding: 1%;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px; }
 
-.btn1 {
-  width: 70%;
-  height: auto;
-  margin-top: 2%;
-  background: #1078AD;
-  padding: 1%;
-  color: white;
-  font-size: 1.3vw;
-  font-weight: 700;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-.mainFooter {
+.mfooter {
   width: 100%;
   margin-bottom: 3%; }
-  .mainFooter__logo {
+  .mfooter__logo {
     width: 10%;
     margin: 0 auto;
     text-align: center;
@@ -144,8 +140,12 @@ ul {
     font-size: 1.3vw;
     font-weight: 600;
     font-family: cairo; }
+    .menu__bar-li a:hover {
+      background-color: #F4CF1B; }
+    .menu__bar-li a img {
+      padding: 10px; }
 
-.setColor {
+.accColor {
   color: #1078AD;
   font-size: 1.2rem;
   font-weight: 600; }
@@ -156,25 +156,25 @@ ul {
   padding-top: 3%;
   font-weight: 500; }
 
-.otherColor {
+.othColor {
   color: #369D53;
   font-weight: 700; }
 
 .textFooter {
   color: #7F7F7F; }
 
-.barFooter {
+.barfooter {
   width: 100%;
   height: 4vh;
   background-color: #1078AD; }
 
-.symp {
+.sympt {
   width: 80%;
   margin: 0 auto 4%;
   text-align: center; }
-  .symp__tit {
+  .sympt__tit {
     margin-bottom: 5%; }
-  .symp__photos {
+  .sympt__photos {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -182,20 +182,20 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: baseline; }
-  .symp__cart {
+  .sympt__cart {
     margin: 0 auto;
     padding: 5% 10% 2%;
     text-align: center;
     align-items: center;
     justify-content: center; }
 
-.rec {
+.recom {
   background-color: #1078AD; }
-  .rec h1 {
+  .recom h1 {
     text-align: center;
     padding-top: 2%;
     color: white; }
-  .rec__bloc {
+  .recom__bloc {
     width: 100%;
     margin: 3% auto;
     display: flex;
@@ -206,7 +206,7 @@ ul {
 
 .txtLeft {
   padding-bottom: 2%; }
-  .txtLeft__txt {
+  .txtLeft__title {
     color: white; }
 
 .tel {
@@ -233,7 +233,7 @@ ul {
   text-align: center;
   align-items: center;
   justify-content: center; }
-  .corona h3 {
+  .corona__title {
     color: #1078AD;
     margin: 1%; }
 

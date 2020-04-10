@@ -1,11 +1,14 @@
 $colorfooter:#1078AD;
 
-.headertest {
+%flexheadertest{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.headertest {
+    @extend %flexheadertest;
 }
 
 .head {
@@ -52,7 +55,7 @@ $colorfooter:#1078AD;
          font-weight: 700;
          border: none;
          border-radius: 4px;
-         cursor: pointer;    
+         //cursor: pointer;    
     }
 
 }

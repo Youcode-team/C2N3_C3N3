@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
 $colorbar:#F4CF1B;
+$fontt:'Cairo', sans-serif;
 
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'cairo';
+    font-family: $fontt;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -13,7 +15,7 @@ body {
     width: 100%;
 }
 .barre1 {
-    width: 100%;
+    @extend .barre;                                    //extend
     background-image: url("png/Merged-bar-51.png");
     background-color: #D0E5F0;
     ul{
@@ -25,7 +27,7 @@ body {
                 padding-left: 10px;
                 font-size: 1.3vw;
                 font-weight: 600;
-                font-family: 'cairo';
+                font-family: $fontt;
                 
                 img{
                     padding: 10px;
@@ -42,7 +44,7 @@ body {
         margin: 0.5% auto auto 2%;
     }
 }
-ul {
+%flexbar{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -55,6 +57,9 @@ ul {
     font-size: 1.3vw;
     margin-right: 20%;
     margin-top: 1.5%;
+}
+ul {
+    @extend %flexbar;                   //placeholder
 
     & li {
         margin-right: 35%;
@@ -62,7 +67,7 @@ ul {
 
         & a {
             text-decoration: none;
-            color: black;
+            color: #1078AD;
             font-weight: 600;
 
             & .imgMenu {
