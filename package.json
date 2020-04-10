@@ -4,7 +4,7 @@
   "description": "C'est un projet pour valider les compétences C3N3 (C2N3).",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass sass/main.scss css/style.css --watch",
+    "watch-sass": "node-sass sass/conseil.scss css/conseil.css --watch",
     "compile-sass": "node-sass sass/main.scss css/style.comp.css",
     "concat-css": "concat -o css/style.concat.css css/style.css css/style.comp.css",
     "prefix-css": "postcss --watch=true --no-map --use autoprefixer -o css/style.prefix.css css/style.concat.css",

@@ -1,0 +1,343 @@
+// debut de style conseil //
+@import 'https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Exo+2&display=swap';
+
+@mixin lange{
+    padding-left:10px;
+    padding-right: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(26,81,158); 
+    border: 1px solid rgb(26,81,158);
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+@mixin lienConseil{
+    width: 250px; 
+    height: 60px; 
+    background-color: rgb(16,120,173);
+    border-radius: 6px;
+    padding: 10px; 
+    margin-top: 50px;
+    border: none;
+    color: white; 
+    font-size: 16px;
+    text-decoration: none;
+}
+    
+@mixin Conseil{
+    margin: 20px;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+}
+
+@mixin Acceil{
+    margin: 20px;
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(26,81,158);
+ }
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 700;
+    body{   
+        header{
+        background-color: rgb(150,197,220);
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background-image: url('../Design/Assets/SVG/Merged bar-1.svg');
+        padding: 10px;
+            div{
+            
+    #lange1{
+        @include lange;
+                }
+
+            .Conseil__header{
+                @include Conseil;
+                }
+
+                .Acceil__header{
+                @include Acceil;
+                }
+            }
+        }
+        #general{
+            position: absolute;
+             z-index: -1;
+            top: 100px;
+            #section1{
+                width: 100%;
+                height: 160px;
+                background-image: url('../Design/Assets/SVG/En chiffres-3.svg');
+                background-repeat: no-repeat;
+                background-size: 120%;
+                background-position-x: -40px;
+                text-align: center;
+                #p__section1{
+                   width: 100%;
+                    line-height: 30px;
+                    margin: auto;
+                    color: rgb(16,120,173);
+                    }
+            }
+            #section2{
+                color: rgb(26,81,158);
+                font-size: 26px;
+                height: 800px;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(4,1fr) ;
+                #h1__section2{
+                    color: rgb(16,120,173);
+                    font-size: 28px;
+                    grid-row: 1/2;
+                    grid-column: 1/4 ;
+                }
+                #img1__section2{
+                    grid-row: 2/3;
+                    grid-column: 1/2 ;
+                    padding: 10px;
+                }
+                #img2__section2{
+                    grid-row: 2/3;
+                    grid-column: 2/3 ;
+                    padding: 10px;
+                }
+                #img3__section2{
+                    grid-row: 2/3;
+                    grid-column: 3/4 ;
+                    padding: 10px;
+                }
+                #img4__section2{
+                    grid-row: 3/4;
+                    grid-column: 1/2 ;
+                    padding: 10px;
+                }
+                #img5__section2{
+                    grid-row: 3/4;
+                    grid-column: 2/3 ;
+                    padding: 10px;
+                }
+                #img6__section2{
+                    grid-row: 3/4;
+                    grid-column: 3/4 ;
+                    padding: 10px;
+                }
+                #img7__section2{
+                    grid-row: 4/5;
+                    grid-column: 1/4 ;
+                    padding: 10px;
+                }
+            }
+            #article1{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                background-color: #b1d4e6;
+                height: 200px;
+                padding: 20px;
+                #h1__article1{
+                    color: rgb(16,120,173);
+                    font-size: 30px;
+                }
+                #p__article1{
+                    color: rgb(26,81,158);
+                    font-size: 20px;
+                }
+                #lien1__article1{
+                @include lienConseil;
+                }
+                #lien2__article1{
+                @include lienConseil;
+                }
+            }
+            #section3{
+                height: 800px;
+                width: 600px;
+                display: grid;
+                padding: 20px;
+                grid-template-rows: repeat(5,1fr);
+                grid-template-columns: repeat(2,1fr);
+                text-align: center;
+                margin: auto;
+                #h1__section3{
+                    font-size: 30px;
+                    color: rgb(16,120,173);
+                    grid-row: 1/2;
+                    grid-column:1/3;
+                }
+                #img1__section3{
+                    grid-row:2/3 ;
+                    grid-column:1/2 ;
+                }
+                #img2__section3{
+                    grid-row:2/3 ;
+                    grid-column:2/3 ;
+                }
+                #img3__section3{
+                    grid-row: 3/4;
+                    grid-column: 1/2;
+                }
+                #img4__section3{
+                    grid-row: 3/4;
+                    grid-column:2/3 ;
+                }
+                #h2__section3{
+                    grid-row: 4/5;
+                    grid-column:1/3 ;
+                    font-size: 30px;
+                    color: rgb(16,120,173);
+                }
+                #img5__section3{
+                grid-row: 5/6;
+                grid-column:1/2 ;
+                color: rgb(26,81,158);
+                }
+                #img6__section3{
+                grid-row: 5/6;
+                grid-column:2/3 ;
+                color: rgb(26,81,158);
+                }
+            }
+            #section4{
+                background-color: rgb(16,120,173);
+                padding: 20px;
+                h1{
+                font-size: 23px;
+                color: #dce7e7;
+                text-align: center;
+                }
+                div{
+                display: flex;
+                justify-content: space-around;
+                #article1__section4{
+                    font-size: 20px;
+                    color: white;
+                        span{
+                    font-size: 20px;
+                    color: black;
+                        }
+                    }
+                    #article2__section4{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 40px;
+                        #h21__article2{
+                            font-size: 20px;
+                            color: rgb(244,207,27);
+                        }
+                        #h22__article2{
+                            font-size: 20px;
+                            color: rgb(16,120,173);
+                            background-color: rgb(244,207,27);
+                            width: 200px;
+                            padding: 10px;
+                            border-radius: 6px; 
+                        }
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            border-bottom: 1px solid rgb(244,207,27);
+                        }
+                    }
+                }
+            }
+            aside{
+                text-align: center;
+                padding: 10px;
+                background-color: rgb(150,197,220);
+                h1{
+                color: rgb(16,120,173);
+                } 
+                button{
+                    width: 400px;
+                    background-color: rgb(16,120,173);
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                    outline: 0;
+                }
+            }
+            #footer1{
+                width: 100%;
+                display: grid;
+                height: 400px;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                justify-content: center;
+                align-items: center;
+                #img__footer1{
+                    text-align: center;
+                    width: 100%;
+                    grid-row: 1/2;
+                    grid-column: 1/4;
+                }
+                #div1__footer1{
+                    text-align: center;
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    #lange2{
+                        @include lange;
+                    }
+                    .Conseil__header{
+                        @include Conseil;
+                            
+                    }
+                    .Acceil__header{
+                        @include Acceil;
+                    }
+                }
+                #div2__footer1{
+                    text-align: center;
+                    line-height: 40px;
+                    grid-row: 2/3;
+                    grid-column: 2/3;
+                    #h21__div2__footer1{
+                        color: rgb(16,120,173);
+                        font-size: 20px;
+                    }
+                    .h22__div2__footer1{
+                        color: rgb(54,157,83);
+                        font-size: 20px;
+                    }
+                }
+                #p__footer1{
+                    grid-row: 2/3;
+                    grid-column: 3/4;
+                    width: 550px;
+                    margin: 10px;
+                    color: rgb(127,127,127) ;
+                    font-weight: 100px;
+                }
+            }
+            #footer2{
+                height: 60px;
+                background-image: url('../Design/Assets/png/En chiffres-30@2x.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+   }
+    
+} 
+// fin style conseil //
