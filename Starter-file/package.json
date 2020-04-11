@@ -17,6 +17,7 @@
     "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css",
     "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.concat.css  -o dist/css/style.prefix.css"
+    
   },
   "author": "kawtar arkoubi",
   "license": "ISC",
