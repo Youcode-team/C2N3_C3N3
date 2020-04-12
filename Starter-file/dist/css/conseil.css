@@ -1,0 +1,106 @@
+.headerConseil {
+  width: 100%;
+  height: auto;
+  margin-top: 2%; }
+  .headerConseil__tit {
+    text-align: center;
+    color: #1078AD; }
+
+.conseil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .conseil__cart {
+    padding: 5%; }
+    .conseil__cart h3 {
+      color: #1078AD; }
+    .conseil__cart--pik1 {
+      max-width: 50%;
+      height: auto;
+      padding-top: 13%; }
+    .conseil__cart--pik2 {
+      margin-top: -13%; }
+
+.home {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%; }
+  .home h3 {
+    color: #1078AD;
+    padding-top: 1%; }
+
+.information {
+  width: 100%;
+  background-color: #D0E5F0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%; }
+
+.info {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .info__txt {
+    width: 30%;
+    height: auto;
+    color: #1078AD;
+    text-align: center; }
+    .info__txt H1 {
+      font-size: 1.6em; }
+  .info__btn {
+    width: 60%;
+    height: auto; }
+    .info__btn--btn1 {
+      width: 30%;
+      height: auto;
+      margin-top: 2%;
+      background-color: #1078AD;
+      padding: 1.5%;
+      font-size: 1vw;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+      .info__btn--btn1 a {
+        color: white;
+        text-decoration: none; }
+    .info__btn--btn2 {
+      margin-left: 25%;
+      width: 30%;
+      height: auto;
+      margin-top: 2%;
+      background-color: #1078AD;
+      padding: 1.5%;
+      font-size: 1vw;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+      .info__btn--btn2 a {
+        color: white;
+        text-decoration: none; }
+
+.korona {
+  width: 100%;
+  color: #1078AD; }
+  .korona h1 {
+    text-align: center; }
+
+.blokorona {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5%; }
