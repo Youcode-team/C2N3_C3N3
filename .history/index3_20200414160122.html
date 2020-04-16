@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //test simple
+     var age = prompt("entrez votre age");
+
+         if (age > 18) {
+            alert("Vous êtes majeur ")
+         } else {
+             alert("Vous êtes mineur ")
+
+         }
+
+
+        //#Test sur la longueur d'une chaîne de caractères
+
+        var text = prompt("entrez un text")
+         var bool = true;
+        if (text.length < 10) {
+            alert(bool)
+         } else {
+           alert(!bool)
+         }
+
+        //#Tests imbriqués
+
+         var note = prompt("entrez une note")
+
+         if (note >= 0 && note < 7) {
+            alert("Hideux")
+
+        } else if (note >= 7 && note < 10) {
+           alert("MOche")
+         } else if (note >= 10 && note < 15) {
+             alert("Nice")
+         } else if (note >= 15 && note <= 20) {
+             alert("GG")
+         } else {
+             alert("BUG")
+         }
+    </script>
+
+
+</body>
+
+</html>

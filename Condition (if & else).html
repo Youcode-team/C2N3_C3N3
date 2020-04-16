@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function Note(){
+        var note=document.getElementById("note").value;
+            if((note>0)&&(note<7))
+                 alert("Hideux");
+                else
+                    if((note>7)&&(note<10))
+                        alert("Moch");
+                    else
+                        if((note>10)&&(note<15))
+                        alert("Nice");
+                         else
+                            if((note>15)&&(note<=20))
+                            alert("GG");
+                            else
+                               alert("BUG");
+                   }
+    </script>
+        </head>
+        <body>
+            <input type="text" id="note"/>
+            <button onclick="Note()">Click me</button>
+        </body>
+</html>

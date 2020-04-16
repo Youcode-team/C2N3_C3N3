@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //boucle for
+        var br = '<br>';
+       
+       for (let i = 0; i < 10; i++) {
+           document.write(`La valeur de i: ${i} ${br}`);
+       }
+       //boucle while avec itérateur
+       var i = 0;
+       var br = "<br>";
+       while (i <= 10) {
+    document.write(`La valeur de i: ${i} ${br}`);
+    i++;
+      }
+      //Boucle while sans itérateur
+      var txt = '';
+      var result = '';
+    var check = true;
+
+
+    do {
+    result = prompt('Entrer du texte: ');
+    if (result != '') {
+        check = true;
+        txt = txt + result;
+    } else {
+        check = false;
+    }
+    }
+    while (check == true);
+    //Boucle avec break
+    var txt = '';
+    var result = '';
+    var check = true;
+
+
+    while (check == true) {
+    result = prompt('Entrer du texte: ');
+    if (result != '') {
+        check = true;
+        txt = txt + result;
+    } else {
+        break;
+    }
+    }
+    //boucle avec continue
+    var i = 0;
+    var j = 5;
+    var limit = 8;
+
+
+    while (i < limit) {
+    i++;
+    if (i < (limit / 2)) {
+        continue;
+    }
+    j++;
+    }
+       </script>  
+    </body>
+</html>
