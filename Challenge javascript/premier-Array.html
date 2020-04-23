@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge_JS_Exercice__1</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <!-- ------------------Premier_Array--------------------------------->
+    <H1 class="h1">Premier Array</H1>
+    <script>
+        const texasss = [
+            { name: 'Mike', age: 23, gender: 'm', us: false, },
+            { name: 'Liz', age: 20, gender: 'f', us: true, },
+            { name: 'Chris', age: 102, gender: 'm', us: true, },
+            { name: 'Chuloo', age: 27, gender: 'm', us: false, },
+            { name: 'Annie', age: 30, gender: 'f', us: true, },
+        ];
+        // ------------------------Premier__tableau-----------------------/
+
+        // Part 1 - Find all users older than 24
+        //Parcourir un tableau
+
+        document.write("<ul>");
+        var somme = 0;
+
+        for (const element of texasss) {
+            //Calcul Somme Age
+            somme = somme + element.age;
+
+            //TEST + AFFICHAGE
+            if (element.age > 24)
+                document.write("<li>" + element.name + "</li>");
+        }
+        document.write("</ul>");
+
+        //Afficher la somme ::
+        document.write("Le total est : " + somme);
+        document.write("<ol>");
+        for (const person of texasss) {
+            if (person.gender === 'f')
+                document.write("<li>" + person.name + "</li>");
+        }
+        document.write("</ol>");
+    </script>
+
+
+</body>
+
+</html>
