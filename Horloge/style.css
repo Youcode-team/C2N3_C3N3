@@ -1,0 +1,44 @@
+/*RESET:*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:
+    -o-linear-gradient(to bottom, rgba(10,10,10,0.2)0%, rgba(10,10,10,0.2)100%),
+    url('background.png');
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.horloge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 2px 50px  rgba(10,10,10,0.5);
+
+}
+.heures{
+    width: 500px;
+    font-size:100px;
+    font-family:'Orbitron' , sans-serif ;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid  rgba(10,10,10,0.2);
+}
+
+.date{
+    font-size: 25px;
+    font-family: 'Nunito Sans' , sans-serif;
+    padding-top: 10px;
+    
+}
