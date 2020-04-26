@@ -1,26 +1,35 @@
-// ndf réalisé le 23 avril
+// Séléctionner les aiguilles de montre
+const AIGUILLEHR = document.querySelector("#hour");
+const AIGUILLEMIN = document.querySelector("#minute");
+const AIGUILLESEC = document.querySelector("#second");
 
-var heurseDiv = document.querySelector('.heures');
-var dateDiv = document.querySelector('.date');
+//Extraire l'heure actuel à l'aide de l'objet Date()
+var date = new Date()
 
-var affichageHeure = function(){
-    //Déclaration des variables qui seront utilisées :
-    var today, annee, listeMois, mois, listeJours, jourNumero, jourNom, heures, minutes, secondes, deuxChiffres;
 
-    //Récupérer la date actuelle :
-    today = new Date();
 
-    //Récupérer l'année :
-    annee = today.getFullYear();
 
-    //Récupérer le mois :
-    listeMois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre","Novembre", "Décembre"];
-    mois = listeMois[today.getMonth()];//getMonth() donne l'index 1 comme on est en Février, ce qui donne la valeur "Février" depuis notre list
+//Ajouter l'heure , minite , seconde  dans des varaiables
+let hr = date.getHours()
+let min = date.getMinutes()
+let sec = date.getSeconds()
+// console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec)
 
-    //Récupérer le numéro du jour du mois
+// Calculer de degré de mouvement de l'aiguille heure, de l'aiguille minute, de l'aiguille seconde
+// Hint : Tous les aiguilles doivent se déplacer chaque second selon un degré
+let hrPosition = (hr*360/12)+(min*(360/60)/12)
+let minPosition = (min*360/60)+(sec*(360/60)/60)
+let secPosition = sec*360/60
 
-    
+// Déplacer les aiguilles
+function demarrerLaMontre() {
+  hrPosition = hrPosition + (3/360)
+  minPosition = minPosition + (1/10)
+  secPosition = secPosition + 6
 
-    
-
+  AIGUILLEHR.style.transform = "rotate(" + hrPosition + "deg)"
+  AIGUILLEMIN.style.transform = "rotate(" + minPosition + "deg)"
+  AIGUILLESEC.style.transform = "rotate(" + secPosition + "deg)"
 }
+// Exercuter la fonction chaque second
+var interval = setInterval(demarrerLaMontre, 1000);
