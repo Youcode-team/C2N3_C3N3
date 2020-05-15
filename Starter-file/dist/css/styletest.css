@@ -30,7 +30,7 @@
       line-height: 2em; }
     .footer__links__nav__button {
       border: 1px solid #1078ad;
-      background: url(../../../Design/Assets/png/language.png) center right no-repeat;
+      background: url(../images/language.png) center right no-repeat;
       padding: 0.5em 1.5em 0.5em 1em;
       background-size: 20%;
       border-radius: 1em;
@@ -53,7 +53,7 @@
 .header {
   margin-bottom: 2em; }
   .header__nav {
-    background: url(../../../Design/Assets/png/Merged-bar-1.png);
+    background: url(../images/Merged-bar-1.png);
     display: flex;
     justify-content: space-between;
     padding: 0.5em; }
@@ -76,7 +76,7 @@
       .header__nav__links__button {
         color: white;
         border: 1px solid #1078ad;
-        background: url(../../../Design/Assets/png/language.png) center right no-repeat;
+        background: url(../images/language.png) center right no-repeat;
         padding: 0.5em 1.5em 0.5em 1em;
         background-size: 20%;
         border-radius: 1em; }
@@ -127,7 +127,7 @@
     font-size: 1.2em;
     width: 60%;
     max-width: 600px;
-    background: url(../../../Design/Assets/png/demarrer.png);
+    background: url(../images/demarrer.png);
     margin: 1em auto;
     padding: 0.5em 4em; }
 
@@ -224,7 +224,7 @@
       font-size: 1.2em;
       width: 60%;
       max-width: 600px;
-      background: url(../../../Design/Assets/png/demarrer.png);
+      background: url(../images/demarrer.png);
       margin: 1em auto;
       width: 50%;
       max-width: 700px;
@@ -413,7 +413,7 @@
     font-size: 1.2em;
     width: 60%;
     max-width: 600px;
-    background: url(../../../Design/Assets/png/demarrer.png);
+    background: url(../images/demarrer.png);
     margin: 1em auto;
     width: 50%;
     max-width: 500px;
@@ -495,7 +495,7 @@
     font-size: 1.2em;
     width: 60%;
     max-width: 600px;
-    background: url(../../../Design/Assets/png/demarrer.png);
+    background: url(../images/demarrer.png);
     margin: 1em auto;
     width: 40%;
     margin-top: 3em;
@@ -549,7 +549,7 @@
     font-size: 1.2em;
     width: 60%;
     max-width: 600px;
-    background: url(../../../Design/Assets/png/demarrer.png);
+    background: url(../images/demarrer.png);
     margin: 1em auto;
     width: 50%;
     max-width: 500px;
